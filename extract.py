@@ -15,7 +15,6 @@ def table(songlist):
 		row += [' ' for _ in range(song_max_width - len(left))]
 		row += ['   ']
 		row += [right]
-		row += [' ' for _ in range(artist_max_width - len(right))]
 		row = ''.join(row) + '\n'
 		return row
 
