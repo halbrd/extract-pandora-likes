@@ -31,7 +31,7 @@ def table(songlist):
 	return table
 
 songlist = list(zip(songs, artists))
-songlist.sort(key=lambda song: song[1])
+songlist.sort(key=lambda song: (song[1], song[0]))
 
 with open('pandora_likes.txt', 'w') as f:
 	f.write(table(songlist))
